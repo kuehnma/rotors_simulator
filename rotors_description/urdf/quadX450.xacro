@@ -69,7 +69,7 @@
   <!-- Downward facing camera -->
   <xacro:include filename="$(find rotors_description)/urdf/sensors/generic_camera.urdf.xacro" />
   <xacro:generic_camera name="quadX450/bottom" parent="base_link" ros_topic="image_raw" cam_info_topic="camera_info" update_rate="60" res_x="640" res_y="360" image_format="R8G8B8" hfov="81" framename="quadX450_bottomcam">
-      <origin xyz="0.15 0.0 0.0" rpy="0 ${M_PI/2} ${M_PI}"/>
+      <origin xyz="0.15 0.0 0.0" rpy="0 ${M_PI/2} 0"/>
   </xacro:generic_camera>  
 
   <!-- Instantiate rotors -->
